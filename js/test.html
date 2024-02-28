@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head></head>
+
+<body>
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onclick Attribute</h2>
+
+    <button id="Button" onclick="display()">The time is?</button>
+    <script>
+        function display() {
+            var currentDate = new Date();
+            var currentMinutes = currentDate.getMinutes();
+            var currentHours = currentDate.getHours();
+            document.getElementById("Button").innerHTML = "This is current Hour " + currentHours + ":" + currentMinutes;
+        }
+    </script>
+</body>
+
+</html>

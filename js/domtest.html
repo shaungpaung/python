@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <img src="../img/1.jpg" alt="" />
+    <button onclick="changePicture()">On</button>
+    <button onclick="rechangePicture()">Off</button>
+
+    <script type="text/javascript">
+      function changePicture() {
+        document.querySelector("img").src = "../img/2.png";
+      }
+
+      function rechangePicture() {
+        document.querySelector("img").src = "../img/1.jpg";
+      }
+    </script>
+  </body>
+</html>
